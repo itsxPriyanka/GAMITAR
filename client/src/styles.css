@@ -1,0 +1,95 @@
+:root {
+  --bg: #0f172a;
+  --card: #0b1220;
+  --accent: #7c3aed;
+  --muted: #94a3b8;
+  --cell: #0b1226;
+}
+
+body {
+  margin: 0;
+font-family: Inter, system-ui, -apple-system, "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #071020);
+  color: #e6eef8;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 920px;
+  max-width: 95vw;
+}
+
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 12px;
+}
+.header h1 { margin:0; font-size:20px; }
+.header .meta { color: var(--muted); font-size:14px; }
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.grid-card {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,.6);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 6px;
+}
+
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background: var(--cell);
+  border-radius: 8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor: pointer;
+  font-size:18px;
+  user-select:none;
+  transition: transform .08s;
+  font-family: "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji", sans-serif;
+}
+.cell:hover { transform: translateY(-2px); }
+
+.cell.empty { color: var(--muted); font-size:12px; }
+.sidebar {
+  width: 240px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.panel {
+  background: var(--card);
+  padding:12px;
+  border-radius:10px;
+}
+.button {
+  padding:8px 10px;
+  border-radius:8px;
+  background: var(--accent);
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+.small { font-size:13px; padding:6px 8px; }
+
+.history-list { max-height: 300px; overflow:auto; color:var(--muted); font-size:13px; }
+.history-item { padding:6px 0; border-bottom: 1px solid rgba(255,255,255,0.02); }
+.count-bubble { background: rgba(255,255,255,0.06); padding:6px; border-radius:8px; text-align:center; }
+.disabled { opacity: 0.4; pointer-events: none; }
