@@ -10,7 +10,7 @@ type HistoryEntry = {
   timestamp: number;
 };
 
-const SERVER = " https://gamitar-1.onrender.com";
+const SERVER = "https://gamitar-1.onrender.com";
 
 export default function App() {
   const [grid, setGrid] = useState<string[]>(() => Array(100).fill(""));
