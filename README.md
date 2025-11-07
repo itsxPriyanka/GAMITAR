@@ -5,6 +5,9 @@
 A real-time multiplayer web application where players can select and update blocks in a 10×10 shared grid with Unicode characters.
 Once a player submits a character, they cannot modify any other block unless the timed restriction expires.
 
+
+
+
 🚀 Features
 
 Shared Multiplayer Grid: All players interact on the same 10×10 grid.
@@ -20,6 +23,8 @@ Optional Feature: 1-minute cooldown period before a player can edit again.
 Optional Feature: Historical updates tracking (grid state history).
 
 
+
+
 🧠 Tech Stack
 
 Frontend: React.js, TypeScript, TailwindCSS
@@ -31,6 +36,8 @@ State Management: React Context / Redux
 Hosting (Optional): Render / Vercel / Netlify
 
 
+
+
 2️⃣ Install Dependencies
 # Install server dependencies
 cd server
@@ -40,12 +47,16 @@ npm install
 cd ../client
 npm install
 
+
+
 3️⃣ Run the Application
 # Run backend (in /server)
 npm run dev
 
 # Run frontend (in /client)
 npm start
+
+
 
 
 🧪 Testing Multiplayer Functionality
@@ -62,6 +73,8 @@ Open the same URL in another tab or browser window (Player 2).
 When Player 1 updates a block, Player 2 will see it update instantly.
 
 Both players can see the number of connected players at the top.
+
+
 
 
 📜 AI Tools Disclosure
