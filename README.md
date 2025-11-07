@@ -51,10 +51,10 @@ npm install
 
 3️⃣ Run the Application
 # Run backend (in /server)
-npm run dev
+npm start
 
 # Run frontend (in /client)
-npm start
+npm run dev
 
 
 
