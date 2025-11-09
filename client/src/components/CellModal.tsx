@@ -37,7 +37,7 @@ export default function CellModal({ open, onClose, onSubmit, cellIndex, restrict
           }}>Cancel</button>
           <button className="button small" onClick={()=>{
             if (value.length === 0) return;
-            onSubmit(value[0]); // take first char only
+            onSubmit(Array.from(value)[0]); // take the first full Unicode character
             setValue("");
             onClose();
           }} disabled={!value || (restrictInfo && !restrictInfo.allowed)}>Submit</button>
