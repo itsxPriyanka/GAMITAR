@@ -52,19 +52,26 @@ font-family: Inter, system-ui, -apple-system, "Segoe UI Emoji", "Noto Color Emoj
 
 
 .cell {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   background: var(--cell);
   border-radius: 8px;
   display:flex;
   align-items:center;
   justify-content:center;
   cursor: pointer;
-  font-size:18px;
+ 
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
   user-select:none;
   transition: transform .08s;
   font-family: "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji", sans-serif;
 }
+
+
 .cell:hover { transform: translateY(-2px); }
 
 .cell.empty { color: var(--muted); font-size:12px; }
