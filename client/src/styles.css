@@ -65,6 +65,10 @@ font-family: Inter, system-ui, -apple-system, "Segoe UI Emoji", "Noto Color Emoj
   text-align: center;
   white-space: normal;
   word-break: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
 
   user-select:none;
   transition: transform .08s;
